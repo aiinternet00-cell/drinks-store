@@ -65,9 +65,12 @@ h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:500}
 .add:hover .add-meta i{transform:translateX(4px)}
 .mood-add{gap:24px;max-width:100%;white-space:nowrap}
 .mood-add strong{font-size:12px;font-weight:600;letter-spacing:.03em}
+.mood-text b{display:block;line-height:1.45}
+.mood-text .mood-add{margin-top:24px}
 .mood-text h3,.cart-item h3,.summary h2,.newsletter h2,.review-grid blockquote{font-family:'Cormorant Garamond',serif}
 /* Векторные продуктовые иллюстрации остаются резкими на Retina и во время анимации. */
 .can,.fruit,.leaf,.benefit-icon{backface-visibility:hidden;transform-style:preserve-3d;will-change:transform}
 .can{isolation:isolate;outline:1px solid rgba(255,255,255,.16);outline-offset:-1px}
 .product-visual,.hero-art,.ingredient-art,.sub-art,.mood-result{transform:translateZ(0)}
-@media(max-width:600px){.product-info{min-height:auto;padding:24px 11px 27px}.product-info h3{font-size:34px}.product-description{font-size:13px;line-height:1.7}.add{padding:14px 11px}.mood-add{width:100%;gap:12px;padding:14px 16px!important}.mood-add strong{margin-left:auto;font-size:11px}}
+@media(max-width:600px){.product-info{min-height:auto;padding:24px 11px 27px}.product-info h3{font-size:34px}.product-description{font-size:13px;line-height:1.7}.add{padding:14px 11px}.mood-result{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;justify-content:normal}.mood-text{max-width:none;min-width:0}.mood-add{width:100%;gap:12px;padding:14px 16px!important}.mood-add strong{margin-left:auto;font-size:11px}}
+@media(max-width:360px){.mood-result{gap:10px}.mood-result .can{width:110px;height:280px}.mood-add{gap:8px;padding:13px 10px!important}}
