@@ -20,3 +20,27 @@ header{background:rgba(11,11,11,.82);border-color:rgba(255,255,255,.13);box-shad
 .summary,.order-summary{background:#171717;border:1px solid rgba(255,255,255,.1);box-shadow:0 22px 55px #0005}.checkout input,.checkout select{color:#f4f4f0}.checkout select option{background:#171717;color:#fff}.checkout input:focus,.checkout select:focus{border-color:var(--lime)}
 .pill.dark{background:#f2f2ec;color:#10110d}.hero .pill.dark,.mood-result .pill.dark,.success .pill.dark{background:#12150f;color:#fff}.pill.light{background:#f4f4f0;color:#111}.site-footer,.benefits{background:#070707}.benefits{color:#f4f4f0}.toast{background:#f2f2ec;color:#111;border:1px solid #fff;box-shadow:0 12px 40px #0009}
 @media(max-width:900px){.mobile-menu{background:#0b0b0b;color:#f4f4f0}.mobile-menu a{border-color:#fff3}}
+
+/* Различимые функциональные линейки и минималистичные иконки */
+.arrow-icon,.search-icon{width:19px;height:19px;display:block;fill:none;stroke:currentColor;stroke-width:1.35;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.mood-buttons .arrow-icon{color:#eee;transition:transform .3s ease}
+.mood-buttons button:hover .arrow-icon,.mood-buttons button.active .arrow-icon{transform:translate(3px,-3px)}
+.mood-buttons button>span{display:flex;flex-direction:column;gap:3px}
+.mood-buttons button small{font-family:'DM Sans',sans-serif;font-size:9px;letter-spacing:.09em;text-transform:uppercase;opacity:.65}
+.product-info{min-height:190px;gap:12px}.product-info>div{flex:1}.product-description{font-size:12px;line-height:1.45;opacity:.72;margin:9px 0}.product-info small{display:block;line-height:1.45}.product-info>strong{white-space:nowrap}
+.can:after{content:'';position:absolute;inset:72px 12px 82px;pointer-events:none;opacity:.24}
+.can-bolt:after{clip-path:polygon(55% 0,22% 51%,48% 51%,35% 100%,80% 38%,53% 38%);background:var(--ink)}
+.can-bands:after{background:repeating-linear-gradient(165deg,transparent 0 18px,var(--ink) 19px 23px)}
+.can-waves:after{background:radial-gradient(ellipse at 50% 110%,transparent 0 35%,var(--ink) 36% 38%,transparent 39% 50%,var(--ink) 51% 53%,transparent 54%)}
+.can-grid:after{background:linear-gradient(var(--ink) 1px,transparent 1px),linear-gradient(90deg,var(--ink) 1px,transparent 1px);background-size:18px 18px}
+.can-pulse:after{clip-path:polygon(0 52%,25% 52%,34% 25%,45% 76%,55% 43%,63% 52%,100% 52%,100% 57%,60% 57%,56% 52%,44% 88%,33% 45%,29% 57%,0 57%);background:var(--ink)}
+.can-halo:after{border:2px solid var(--ink);border-radius:50%;inset:105px 27px 112px;box-shadow:0 0 0 12px transparent,0 0 0 13px var(--ink)}
+.can-drops:after{background:radial-gradient(ellipse at 30% 30%,var(--ink) 0 7%,transparent 8%),radial-gradient(ellipse at 70% 60%,var(--ink) 0 9%,transparent 10%),radial-gradient(ellipse at 35% 82%,var(--ink) 0 6%,transparent 7%)}
+.can-sun:after{border:2px solid var(--ink);border-radius:50%;inset:115px 40px 105px;box-shadow:0 0 0 10px transparent,0 0 0 11px var(--ink)}
+.benefit-icon{width:58px;height:58px;margin:55px 0 35px;border:1px solid currentColor;border-radius:50%;position:relative;opacity:.8}
+.benefit-icon:before,.benefit-icon:after{content:'';position:absolute;inset:50% 12px auto;height:1px;background:currentColor}.benefit-icon:after{transform:rotate(90deg)}
+.benefit-icon-02{border-radius:50% 8px 50% 8px;transform:rotate(45deg)}.benefit-icon-03:before{transform:rotate(45deg)}.benefit-icon-03:after{transform:rotate(-45deg)}.benefit-icon-04{border-radius:8px;transform:rotate(45deg)}
+.fruit{width:100px;height:100px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff7 0 5%,transparent 6%),#f1cf40;box-shadow:inset -14px -10px 0 #d6a71d;filter:drop-shadow(5px 10px 8px #0002)}
+.fruit2{background:radial-gradient(circle at 32% 28%,#fff6 0 5%,transparent 6%),#4d3c92;box-shadow:inset -12px -9px 0 #302268;width:82px;height:82px}
+.leaf{width:74px;height:120px;background:#538348;border-radius:100% 0 100% 0;transform:rotate(28deg);opacity:.75}
+@media(max-width:600px){.product-info{min-height:auto}.mood-buttons button{padding:13px 2px}.mood-result{align-items:center}.mood-text{max-width:52%}.mood-text b{display:block;font-size:10px;line-height:1.4}.arrow-icon{width:17px;height:17px}}
